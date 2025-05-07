@@ -6,8 +6,8 @@
   customManagers: [
     {
       customType: 'regex',
-      fileMatch: [
-        '^Dockerfile$',
+      managerFilePatterns: [
+        '/^Dockerfile$/',
       ],
       datasourceTemplate: 'git-tags',
       depNameTemplate: 'http://thekelleys.org.uk/git/dnsmasq.git',
